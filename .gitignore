@@ -21,6 +21,8 @@ node_modules/
 .cache/
 .eslintcache
 *.tsbuildinfo
+dist/
+dist-ssr/
 
 # ===== Python =====
 __pycache__/
