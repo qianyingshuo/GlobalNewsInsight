@@ -1,0 +1,122 @@
+{
+  "date": "2026-05-18",
+  "sources_searched": [
+    {
+      "source": "Web Search - AI News Aggregators",
+      "url": "https://aitoolsrecap.com/Blog/May-18-2026",
+      "data": [
+        {
+          "title": "Google I/O 2026明天开幕，Gemini 4即将发布",
+          "published_at": "2026-05-18T00:00:00Z",
+          "category": "AI & Tech",
+          "summary": "Google I/O 2026将于5月19日在加州Shoreline圆形剧场开幕，Gemini 4预计发布。谷歌正在展示其在AI领域的全面反击，涵盖从操作系统到推理模型的多个产品线。"
+        },
+        {
+          "title": "Anthropic $900B融资进展顺利",
+          "published_at": "2026-05-18T00:00:00Z",
+          "category": "IPO & Finance",
+          "summary": "Anthropic正以$900B估值进行大规模融资，ARR已达$44B，公司估值超过OpenAI。"
+        }
+      ]
+    },
+    {
+      "source": "Web Search - IPO Tracker",
+      "url": "https://aifundingtracker.com/ai-ipo-tracker/",
+      "data": [
+        {
+          "title": "SpaceX计划6月启动IPO路演，目标估值$1.75T-$2T",
+          "published_at": "2026-05-18T00:00:00Z",
+          "category": "IPO & Finance",
+          "summary": "SpaceX已于4月1日提交机密S-1文件，目标融资$75B，估值$1.75-$2T。6月路演将成为史上最大IPO。",
+          "importance": 5
+        },
+        {
+          "title": "Cerebras成功IPO，首日暴涨108%",
+          "published_at": "2026-05-14T00:00:00Z",
+          "category": "IPO & Finance",
+          "summary": "Cerebras于5月14日登陆纳斯达克，IPO定价$185/股，首日收盘$311，暴涨108%，融资$55.5B，估值一度达$1000B。"
+        }
+      ]
+    },
+    {
+      "source": "Web Search - xAI & SpaceX",
+      "url": "https://www.newsx.com/tech-and-auto/elon-musk-makes-big-move-merges-xai-with-spacex-125-trillion-usd-venture",
+      "data": [
+        {
+          "title": "SpaceX收购xAI成立$1.25T联合实体",
+          "published_at": "2026-02-03T00:00:00Z",
+          "category": "AI & Tech",
+          "summary": "马斯克宣布SpaceX收购xAI，成立$1.25T联合实体，计划整合AI、社交媒体、火箭和太空计算，部署轨道AI数据中心，年底前潜在IPO。"
+        }
+      ]
+    },
+    {
+      "source": "Web Search - Anthropic News",
+      "url": "https://jls42.org/en/news/anthropic-spacex-colossus-claude-code-doubled-limits-2026",
+      "data": [
+        {
+          "title": "Anthropic Claude Code限额永久提升50%",
+          "published_at": "2026-05-15T00:00:00Z",
+          "category": "AI & Tech",
+          "summary": "Anthropic宣布Claude Code所有付费计划限额永久提升50%，有效期至7月13日。当日还进行了例外性全面重置。",
+          "importance": 4
+        },
+        {
+          "title": "Anthropic programmatic credit 6月15日上线",
+          "published_at": "2026-05-13T00:00:00Z",
+          "category": "AI & Tech",
+          "summary": "从6月15日起，Claude付费用户可领取专门用于API编程调用的月度积分，覆盖Agent SDK、claude -p、GitHub Actions等场景。"
+        },
+        {
+          "title": "Claude法律行业解决方案：20+MCP连接器",
+          "published_at": "2026-05-12T00:00:00Z",
+          "category": "AI & Tech",
+          "summary": "Anthropic发布面向法律行业的Claude方案，集成20+ MCP连接器（Definely、Docusign、iManage等）和12个专业插件。"
+        }
+      ]
+    },
+    {
+      "source": "Web Search - Google DeepMind",
+      "url": "https://neuralwired.com/2026/05/06/google-deepmind-us-government-ai-testing/",
+      "data": [
+        {
+          "title": "Google DeepMind员工投票组建工会反对军事AI合同",
+          "published_at": "2026-05-05T00:00:00Z",
+          "category": "Policy",
+          "summary": "Google DeepMind伦敦员工投票组建工会，要求公司停止向美国和以色列军方提供AI技术。此前谷歌从伦理准则中删除了不开发武器AI的承诺。"
+        }
+      ]
+    },
+    {
+      "source": "Web Search - Open Source AI",
+      "url": "https://fazm.ai/t/open-source-llm-releases-may-2026",
+      "data": [
+        {
+          "title": "2026年5月开源模型发布汇总",
+          "published_at": "2026-05-13T00:00:00Z",
+          "category": "Open Source",
+          "summary": "5月已发布MiniCPM-V 4.6 1.3B(5月11日)。4月28-29日集中发布了MiMo-V2.5-Pro、Nemotron 3 Nano Omni、Granite 4.1、Mistral Medium 3.5等多款开源模型。"
+        },
+        {
+          "title": "NVIDIA Star Elastic弹性模型发布",
+          "published_at": "2026-05-16T00:00:00Z",
+          "category": "Open Source",
+          "summary": "NVIDIA发布Star Elastic大模型，30B父模型可零样本切片为23B/12B子模型，AIME-2025精度提升16%，延迟降低1.9倍。"
+        }
+      ]
+    },
+    {
+      "source": "Web Search - Hacker News",
+      "url": "https://news.ycombinator.com/",
+      "data": [
+        {
+          "title": "Hugging Face transformers v5.8.1发布",
+          "published_at": "2026-05-13T00:00:00Z",
+          "category": "Open Source",
+          "summary": "Hugging Face transformers v5.8.1发布，修复DeepSeek V4集成问题，新增对Gemma 4 Assistant、Granite Speech Plus等模型支持。"
+        }
+      ]
+    }
+  ],
+  "timestamp": "2026-05-18T09:57:08Z"
+}

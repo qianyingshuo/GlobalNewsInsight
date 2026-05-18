@@ -1,0 +1,128 @@
+{
+  "date": "2026-05-18",
+  "sources": [
+    {
+      "source": "AI M&A & Funding Tracker",
+      "url": "https://www.kubiosec.tech/blog/2026-05-15-AI-Deals",
+      "items": [
+        {
+          "title": "Cerebras IPO: $185/股融资$55.5亿估值$560亿",
+          "published_at": "2026-05-13T00:00:00Z",
+          "category": "IPO & Finance",
+          "summary": "Cerebras以$185/股定价IPO，超出上调后区间$150-$160，发行3000万股融资$55.5亿，估值约$560亿。交易于5月14日开始。",
+          "importance": 5
+        },
+        {
+          "title": "Anthropic正进行$900B+估值融资谈判",
+          "published_at": "2026-05-18T00:00:00Z",
+          "category": "IPO & Finance",
+          "summary": "Anthropic正以$900-950B估值进行$300-500亿融资轮谈判，ARR预计超$450亿。同时与Akamai签署$18亿7年期云计算合同。",
+          "importance": 5
+        },
+        {
+          "title": "OpenAI推出DeployCo咨询子公司估值$100亿",
+          "published_at": "2026-05-15T00:00:00Z",
+          "category": "AI & Tech",
+          "summary": "OpenAI推出DeployCo咨询子公司，获$40亿PE投资，估值$100亿。微软将OpenAI收入分成上限设为$380亿，节省约$970亿。",
+          "importance": 4
+        },
+        {
+          "title": "NVIDIA 2026年AI股权投资超$400亿",
+          "published_at": "2026-05-15T00:00:00Z",
+          "category": "Finance",
+          "summary": "NVIDIA 2026年AI相关股权投资已超$400亿，涉及初创企业融资轮次逾20轮。",
+          "importance": 4
+        },
+        {
+          "title": "Sierra AI融资$9.5亿估值$150亿",
+          "published_at": "2026-05-15T00:00:00Z",
+          "category": "AI & Tech",
+          "summary": "AI助手初创公司Sierra AI完成$9.5亿融资，估值达$150亿。",
+          "importance": 3
+        }
+      ]
+    },
+    {
+      "source": "OpenAI IPO Analysis",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261883857-openai-ipo-sam-altman-congress-investigation",
+      "items": [
+        {
+          "title": "OpenAI CEO奥特曼遭国会利益冲突调查",
+          "published_at": "2026-05-12T00:00:00Z",
+          "category": "Policy",
+          "summary": "美国众议院监督委员会对Sam Altman个人投资进行正式调查，涉及与OpenAI商业关系中的潜在利益冲突。六位共和党州检察长敦促SEC审查OpenAI公司治理。",
+          "importance": 5
+        },
+        {
+          "title": "OpenAI 600名员工套现$66亿",
+          "published_at": "2026-05-11T00:00:00Z",
+          "category": "Finance",
+          "summary": "超过600名OpenAI现任及前任员工在2025年10月前通过二级市场出售$66亿公司股票，约75名核心成员按$3000万上限套现。",
+          "importance": 4
+        },
+        {
+          "title": "OpenAI CFO警告2026年不具备上市条件",
+          "published_at": "2026-05-12T00:00:00Z",
+          "category": "IPO & Finance",
+          "summary": "OpenAI CFO Sarah Friar明确表示公司2026年尚不具备上市条件，公司仍在'烧钱换规模'阶段，2025年净亏损$440亿。",
+          "importance": 4
+        }
+      ]
+    },
+    {
+      "source": "China AI Chips Research",
+      "url": "https://officechai.com/ai/chinas-self-sufficiency-in-ai-chips-has-risen-from-20-in-2023-to-over-40-in-2026-morgan-stanley-data/",
+      "items": [
+        {
+          "title": "摩根士丹利：中国AI芯片自给率从20%升至40%+",
+          "published_at": "2026-05-17T00:00:00Z",
+          "category": "AI & Hardware",
+          "summary": "摩根士丹利数据显示，中国AI芯片自给率从2023年的约20%升至2026年的41%，预计2030年将达85%。美国出口限制反而加速了中国芯片自主化。",
+          "importance": 4
+        },
+        {
+          "title": "国产AI芯片进入商业化拐点，自给率将达86%",
+          "published_at": "2026-05-11T00:00:00Z",
+          "category": "AI & Hardware",
+          "summary": "2026年5月，国产AI芯片产业迎来里程碑拐点：从'政策驱动'转向'利润驱动'，从'可用'迈向'好用'。摩根斯坦利预测中国AI芯片市场2030年将达$670亿，自给率从33%提升至86%。",
+          "importance": 4
+        },
+        {
+          "title": "中国'反物理'芯片突破：速度提升万倍",
+          "published_at": "2026-05-07T00:00:00Z",
+          "category": "AI & Hardware",
+          "summary": "复旦大学'破晓'二维闪存芯片创下400皮秒全球最快非易失性存储纪录，比主流3D NAND闪存快1000-10000倍。",
+          "importance": 5
+        }
+      ]
+    },
+    {
+      "source": "Tesla & Robotics",
+      "url": "https://lightmytesla.com/news/tesla-robotaxi-7-cities-expansion-h1-2026",
+      "items": [
+        {
+          "title": "特斯拉Robotaxi 2026上半年覆盖7城市",
+          "published_at": "2026-05-02T00:00:00Z",
+          "category": "AI & Auto",
+          "summary": "特斯拉Robotaxi服务预计2026上半年在7城市运营：奥斯汀(已无人监督运营)、达拉斯、休斯顿、凤凰城、迈阿密、奥兰多、坦帕和拉斯维加斯。",
+          "importance": 4
+        },
+        {
+          "title": "特斯拉Robotaxi面临长等待和安全担忧",
+          "published_at": "2026-05-14T00:00:00Z",
+          "category": "AI & Auto",
+          "summary": "特斯拉Robotaxi在德克萨斯州运营面临挑战，路透社测试发现等待时间超过30分钟、服务有限、导航问题。在达拉斯一次20分钟行程延长至近2小时。",
+          "importance": 3
+        },
+        {
+          "title": "马斯克宣布特斯拉转型机器人公司",
+          "published_at": "2026-05-10T00:00:00Z",
+          "category": "AI & Auto",
+          "summary": "特斯拉弗里蒙特工厂最后一批Model S/X下线，产线将改造成Optimus人形机器人生产线，目标年产能100万台。2026年资本支出将超$250亿。",
+          "importance": 5
+        }
+      ]
+    }
+  ],
+  "timestamp": "2026-05-18T10:30:00Z"
+}
