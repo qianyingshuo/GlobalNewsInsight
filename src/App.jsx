@@ -11,8 +11,10 @@ function App() {
   const [intelligenceData, setIntelligenceData] = useState(null)
   const [loading, setLoading] = useState(true)
 
+  const BASE = import.meta.env.BASE_URL || '/'
+
   useEffect(() => {
-    fetch('/data/processed/history_index.json')
+    fetch(`${BASE}data/processed/history_index.json`)
       .then(res => res.json())
       .then(data => {
         setDates(data)
@@ -26,7 +28,7 @@ function App() {
   useEffect(() => {
     if (selectedDate) {
       setLoading(true)
-      fetch(`/data/processed/${selectedDate}/daily_intelligence.json`)
+      fetch(`${BASE}data/processed/${selectedDate}/daily_intelligence.json`)
         .then(res => res.json())
         .then(data => {
           setIntelligenceData(data)
