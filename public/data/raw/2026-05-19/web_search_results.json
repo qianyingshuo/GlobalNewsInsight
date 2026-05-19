@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-19",
+  "generated_at": "2026-05-19T01:06:00Z",
+  "sources": [
+    {
+      "source": "OpenAI Official",
+      "url": "https://openai.com/news",
+      "items": [
+        {
+          "title": "OpenAI and Dell Technologies partner to bring Codex to hybrid and on-premises enterprise environments",
+          "date": "2026-05-18",
+          "category": "AI & Tech"
+        },
+        {
+          "title": "A new personal finance experience in ChatGPT",
+          "date": "2026-05-15",
+          "category": "AI & Tech"
+        },
+        {
+          "title": "Work with Codex from anywhere - ChatGPT mobile app",
+          "date": "2026-05-14",
+          "category": "AI & Tech"
+        }
+      ]
+    },
+    {
+      "source": "Anthropic Official",
+      "url": "https://www.anthropic.com/news",
+      "items": [
+        {
+          "title": "Introducing Claude for Small Business",
+          "date": "2026-05-13",
+          "category": "AI & Tech",
+          "summary": "Package of connectors and ready-to-run workflows for small businesses including QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, and Microsoft 365"
+        }
+      ]
+    },
+    {
+      "source": "Google DeepMind",
+      "url": "https://blog.google",
+      "items": [
+        {
+          "title": "Google DeepMind Accelerator program in Asia Pacific",
+          "date": "2026-05-17",
+          "category": "AI & Tech",
+          "summary": "Three-month program for startups to use frontier AI for environmental solutions"
+        }
+      ]
+    },
+    {
+      "source": "IT之家",
+      "url": "https://www.ithome.com",
+      "items": [
+        {
+          "title": "SpaceX冲刺史上最大IPO",
+          "date": "2026-05-17",
+          "category": "IPO & Finance",
+          "summary": "SpaceX计划6月12日纳斯达克上市，股票代码SPCX，目标估值1.75-2万亿美元，融资750亿美元"
+        }
+      ]
+    },
+    {
+      "source": "36氪",
+      "url": "https://36kr.com",
+      "items": [
+        {
+          "title": "ASIC产业迎来黄金时代",
+          "date": "2026-05-18",
+          "category": "AI & Hardware",
+          "summary": "2026年Q1谷歌TPU在AI服务器出货占比达78%，OpenAI将部署博通定制ASIC"
+        }
+      ]
+    },
+    {
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn",
+      "items": [
+        {
+          "title": "中国芯崛起：国产AI芯片渗透率大幅提升",
+          "date": "2026-05-15",
+          "category": "AI & Hardware",
+          "summary": "华为昇腾950PR算力达英伟达H20的2.8倍，国产AI芯片渗透率从2023年15%提升至2025年41%"
+        }
+      ]
+    },
+    {
+      "source": "CNBC/Tech Media",
+      "url": "https://cnbc.com",
+      "items": [
+        {
+          "title": "NVIDIA tops $40bn in AI equity investments in 2026",
+          "date": "2026-05-10",
+          "category": "Finance",
+          "summary": "英伟达2026年AI股权投资超400亿美元，包括OpenAI 300亿、康宁32亿、IREN 21亿"
+        }
+      ]
+    },
+    {
+      "source": "Tesla/Optimus News",
+      "url": "https://tesla.com",
+      "items": [
+        {
+          "title": "Tesla Optimus Gen-3 officially announced mass production",
+          "date": "2026-05-01",
+          "category": "AI & Auto",
+          "summary": "Optimus Gen-3于2026年5月1日宣布量产，弗里蒙特工厂年产能目标100万台"
+        }
+      ]
+    }
+  ]
+}
