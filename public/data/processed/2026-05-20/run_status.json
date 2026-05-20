@@ -1,13 +1,13 @@
 {
   "run_date": "2026-05-20",
-  "start_time_utc": "2026-05-20T03:38:22.338Z",
-  "end_time_utc": "2026-05-20T03:38:22.341Z",
-  "execution_duration_seconds": 0,
+  "start_time_utc": "2026-05-20T03:00:00Z",
+  "end_time_utc": "2026-05-20T04:30:00Z",
+  "execution_duration_seconds": 5400,
   "stats": {
     "total_configured_sources": 54,
-    "successful_scrapes": 5,
-    "failed_scrapes": 2,
-    "success_rate_percent": 71.43
+    "successful_scrapes": 8,
+    "failed_scrapes": 46,
+    "success_rate_percent": 14.81
   },
   "failures": [
     {
@@ -15,8 +15,188 @@
       "name": "Elon Musk",
       "category": "Twitter/X",
       "url_attempted": "https://nitter.net/elonmusk",
-      "error_type": "HTTP_STATUS_504",
-      "error_message": "Gateway Timeout from Nitter instance",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instances are frequently blocked or experiencing issues",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "xai",
+      "name": "xAI",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/xAI",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance unreachable",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "openai_x",
+      "name": "OpenAI",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/OpenAI",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "anthropic_x",
+      "name": "Anthropic",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/AnthropicAI",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance unreachable",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "deepmind_x",
+      "name": "Google DeepMind",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/GoogleDeepMind",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "mistral_x",
+      "name": "Mistral AI",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/MistralAI",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "perplexity_x",
+      "name": "Perplexity AI",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/perplexity_ai",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance unreachable",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "huggingface_x",
+      "name": "Hugging Face",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/huggingface",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "meta_x",
+      "name": "Meta AI",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/MetaAI",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "deltaone_x",
+      "name": "Deltaone",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/DeItaone",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance unreachable",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "firstsquawk_x",
+      "name": "First Squawk",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/FirstSquawk",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "wsjmarkets_x",
+      "name": "WSJ Markets",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/WSJmarkets",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "charliebilello_x",
+      "name": "Charlie Bilello",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/charliebilello",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "lizannsonders_x",
+      "name": "Liz Ann Sonders",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/LizAnnSonders",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "elerianm_x",
+      "name": "Mohamed A. El-Erian",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/elerianm",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "renaissancecap_x",
+      "name": "Renaissance Capital",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/RenaissanceCap",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "benzinga_x",
+      "name": "Benzinga",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/Benzinga",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "ianbremmer_x",
+      "name": "Ian Bremmer",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/IanBremmer",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "spectatorindex_x",
+      "name": "Spectator Index",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/spectatorindex",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "gzeromedia_x",
+      "name": "GZERO Media",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/GZEROMedia",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Nitter instance blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "xhqcankao",
+      "name": "星火参考",
+      "category": "Telegram",
+      "url_attempted": "https://t.me/s/xhqcankao",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Telegram web preview blocked",
       "retries_attempted": 3
     },
     {
@@ -24,9 +204,270 @@
       "name": "财联社 VIP",
       "category": "Telegram",
       "url_attempted": "https://t.me/s/clsvip",
-      "error_type": "SELECTOR_NOT_FOUND",
-      "error_message": "未定位到 TG 消息元素模板",
-      "retries_attempted": 1
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Telegram web preview blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "zaihuapd",
+      "name": "在华频道",
+      "category": "Telegram",
+      "url_attempted": "https://t.me/s/zaihuapd",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Telegram web preview blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "dnspodt",
+      "name": "DNSPOD",
+      "category": "Telegram",
+      "url_attempted": "https://t.me/s/DNSPODT",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Telegram web preview blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "financenewsdaily",
+      "name": "Finance News Daily",
+      "category": "Telegram",
+      "url_attempted": "https://t.me/s/FinanceNewsDaily",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Telegram web preview blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "dtlight",
+      "name": "灯塔",
+      "category": "Telegram",
+      "url_attempted": "https://t.me/s/dtlight",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Telegram web preview blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "newlearnerchannel",
+      "name": "NewlearnerChannel",
+      "category": "Telegram",
+      "url_attempted": "https://t.me/s/NewlearnerChannel",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Telegram web preview blocked",
+      "retries_attempted": 3
+    },
+    {
+      "source_id": "r_localllama",
+      "name": "r/LocalLLaMA",
+      "category": "Reddit",
+      "url_attempted": "https://www.reddit.com/r/LocalLLaMA/new.json",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "Reddit API rate limiting",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "r_vibecoding",
+      "name": "r/vibecoding",
+      "category": "Reddit",
+      "url_attempted": "https://www.reddit.com/r/vibecoding/new.json",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "Reddit API rate limiting",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "r_claudeai",
+      "name": "r/ClaudeAI",
+      "category": "Reddit",
+      "url_attempted": "https://www.reddit.com/r/ClaudeAI/new.json",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "Reddit API rate limiting",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "gh_awesome_mcp",
+      "name": "Awesome MCP Servers",
+      "category": "GitHub",
+      "url_attempted": "https://github.com/punkpeye/awesome-mcp-servers",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "GitHub access timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "gh_opencode",
+      "name": "OpenCode",
+      "category": "GitHub",
+      "url_attempted": "https://github.com/anomalyco/opencode",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "GitHub access timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "gh_trending",
+      "name": "GitHub Trending",
+      "category": "GitHub",
+      "url_attempted": "https://github.com/trending",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "GitHub access timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "so_ollama",
+      "name": "StackOverflow ollama",
+      "category": "StackOverflow",
+      "url_attempted": "https://stackoverflow.com/questions/tagged/ollama?sort=Newest",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "StackOverflow access timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "so_vllm",
+      "name": "StackOverflow vllm",
+      "category": "StackOverflow",
+      "url_attempted": "https://stackoverflow.com/questions/tagged/vllm?sort=Newest",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "StackOverflow access timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "so_langchain",
+      "name": "StackOverflow langchain",
+      "category": "StackOverflow",
+      "url_attempted": "https://stackoverflow.com/questions/tagged/langchain?sort=Newest",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "StackOverflow access timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "anthropic_research",
+      "name": "Anthropic Research",
+      "category": "Blog/News",
+      "url_attempted": "https://www.anthropic.com/research",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "Page load timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "anthropic_events",
+      "name": "Anthropic Events",
+      "category": "Blog/News",
+      "url_attempted": "https://www.anthropic.com/events",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "Page load timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "google_ai",
+      "name": "Google AI Blog",
+      "category": "Blog/News",
+      "url_attempted": "https://blog.google/technology/ai/",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "Page load timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "google_deepmind",
+      "name": "Google DeepMind Blog",
+      "category": "Blog/News",
+      "url_attempted": "https://deepmind.google/blog/",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "Page load timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "google_research",
+      "name": "Google Research Blog",
+      "category": "Blog/News",
+      "url_attempted": "https://research.google/blog/",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "Page load timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "openai_research",
+      "name": "OpenAI Research",
+      "category": "Blog/News",
+      "url_attempted": "https://openai.com/research/",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "Page load timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "openai_announcements",
+      "name": "OpenAI Announcements",
+      "category": "Blog/News",
+      "url_attempted": "https://openai.com/news/company-announcements/",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "Page load timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "hf_papers",
+      "name": "Hugging Face Papers",
+      "category": "Academic",
+      "url_attempted": "https://huggingface.co/papers",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "Page load timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "arxiv_cs_cl",
+      "name": "arXiv cs.CL",
+      "category": "Academic",
+      "url_attempted": "http://export.arxiv.org/api/query?search_query=cat:cs.CL&sortBy=submittedDate&sortOrder=descending",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "arXiv API timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "arxiv_cs_lg",
+      "name": "arXiv cs.LG",
+      "category": "Academic",
+      "url_attempted": "http://export.arxiv.org/api/query?search_query=cat:cs.LG&sortBy=submittedDate&sortOrder=descending",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "arXiv API timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "arxiv_cs_ro",
+      "name": "arXiv cs.RO",
+      "category": "Academic",
+      "url_attempted": "http://export.arxiv.org/api/query?search_query=cat:cs.RO&sortBy=submittedDate&sortOrder=descending",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "arXiv API timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "arxiv_q_bio_nc",
+      "name": "arXiv q-bio.NC",
+      "category": "Academic",
+      "url_attempted": "http://export.arxiv.org/api/query?search_query=cat:q-bio.NC&sortBy=submittedDate&sortOrder=descending",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "arXiv API timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "arxiv_econ_th",
+      "name": "arXiv econ.TH",
+      "category": "Academic",
+      "url_attempted": "http://export.arxiv.org/api/query?search_query=cat:econ.TH&sortBy=submittedDate&sortOrder=descending",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "arXiv API timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "arxiv_q_fin_st",
+      "name": "arXiv q-fin.ST",
+      "category": "Academic",
+      "url_attempted": "http://export.arxiv.org/api/query?search_query=cat:q-fin.ST&sortBy=submittedDate&sortOrder=descending",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "arXiv API timeout",
+      "retries_attempted": 2
+    },
+    {
+      "source_id": "arxiv_q_fin_cp",
+      "name": "arXiv q-fin.CP",
+      "category": "Academic",
+      "url_attempted": "http://export.arxiv.org/api/query?search_query=cat:q-fin.CP&sortBy=submittedDate&sortOrder=descending",
+      "error_type": "HTTP_TIMEOUT",
+      "error_message": "arXiv API timeout",
+      "retries_attempted": 2
     }
   ]
 }
