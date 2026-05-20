@@ -1,7 +1,8 @@
 {
   "date": "2026-05-20",
   "generated_at": "2026-05-20T04:00:00Z",
-  "executive_briefing": "过去24小时，AI领域呈现三大主线：第一，科技巨头加速AI企业级落地，Anthropic与KPMG、PwC达成战略合作，Anthropic获 Gates Foundation 2亿美元投资；第二，OpenAI强化内容溯源与安全布局，Dell合作将Codex推向混合云环境；第三，Google发布Gemini 3.5 Flash并在AI Impact Summit宣布全球合作计划。整体来看，AI正在从模型竞赛转向应用落地与安全治理并行的新阶段。",
+  "executive_briefing": "过去24小时，AI领域呈现四大主线：第一，科技巨头加速AI企业级落地，Anthropic与KPMG、PwC达成战略合作，Anthropic获 Gates Foundation 2亿美元投资；第二，OpenAI强化内容溯源与安全布局，Dell合作将Codex推向混合云环境；第三，Google发布Gemini 3.5 Flash并在AI Impact Summit宣布全球合作计划；第四，国产AI安全事件引发关注，DeepSeek被曝存在会话隔离漏洞。整体来看，AI正在从模型竞赛转向应用落地与安全治理并行的新阶段。",
+  "summary": "新增3条Telegram情报：DeepSeek安全漏洞、B站盈利、半导体板块异动",
   "charts": [
     {
       "id": "ai_partnership_trend",
@@ -273,6 +274,85 @@
         "exploration_directions": [
           "关注SpaceX算力合作的具体规模",
           "分析对AI基础设施竞争格局的影响"
+        ]
+      }
+    },
+    {
+      "id": "11",
+      "title": "DeepSeek对话系统存在会话隔离漏洞",
+      "summary": "DeepSeek Web与API的对话模型中发现严重安全漏洞：攻击者在全新空对话中仅发送未闭合的<think字符串，模型即会返回其他用户的对话历史片段，可能泄露代码、密钥等敏感信息。",
+      "category": "AI & Tech",
+      "source": "在花频道 / Telegram",
+      "published_at": "2026-05-20T10:57:00Z",
+      "importance": 5,
+      "confidence_score": 85,
+      "confidence_explanation": {
+        "source_level": "Telegram科技频道爆料 + 安全研究员披露",
+        "cross_validation": "漏洞细节已被公开传播，有多方确认",
+        "evidence_support": "有具体漏洞利用方式和危害范围描述"
+      },
+      "sources": [
+        {"name": "在花频道", "url": "https://t.me/s/zaihuapd"}
+      ],
+      "deep_dive": {
+        "underlying_logic": "该漏洞属于典型的会话隔离失效问题，表明DeepSeek在多租户架构的安全设计上存在缺陷。未闭合的<think标签触发了模型的上下文混淆机制。",
+        "cross_boundary_links": "此事件将引发对国产AI模型安全性的广泛关注，可能加速AI安全审计标准的制定。",
+        "exploration_directions": [
+          "关注DeepSeek官方的安全修复进展",
+          "分析对国产AI出海的影响",
+          "追踪是否有用户数据被实际泄露"
+        ]
+      }
+    },
+    {
+      "id": "12",
+      "title": "哔哩哔哩2025年首次实现全年盈利，AI广告增速显著",
+      "summary": "哔哩哔哩披露2025年财报：全年总营收达303.5亿元，同比增长13%；调整后净利润25.9亿元，首次实现全年盈利。其中AI相关广告增速显著，游戏业务受《三国：谋定天下》带动增长。",
+      "category": "Finance",
+      "source": "在花频道 / Telegram",
+      "published_at": "2026-05-20T13:48:00Z",
+      "importance": 4,
+      "confidence_score": 88,
+      "confidence_explanation": {
+        "source_level": "B站官方财报 + 科技频道转载",
+        "cross_validation": "财报数据公开可查",
+        "evidence_support": "有具体营收、利润数据"
+      },
+      "sources": [
+        {"name": "在花频道", "url": "https://t.me/s/zaihuapd"}
+      ],
+      "deep_dive": {
+        "underlying_logic": "B站盈利标志着长视频平台商业模式的成熟。AI广告的增长表明B站正在利用AI技术提升广告精准度和变现效率。",
+        "cross_boundary_links": "这将为其他内容平台提供盈利路径参考，也可能加剧与抖音、快手在AI广告领域的竞争。",
+        "exploration_directions": [
+          "关注B站AI广告产品的具体形态",
+          "分析对其他视频平台的示范效应"
+        ]
+      }
+    },
+    {
+      "id": "13",
+      "title": "半导体板块异动：中微公司、北方华创等获机构关注",
+      "summary": "根据财联社VIP电报解读，半导体设备板块今日异动，中微公司、北方华创、拓荆科技、灿勤科技等个股获机构重点关注。",
+      "category": "Finance",
+      "source": "财联社VIP / Telegram",
+      "published_at": "2026-05-20T09:07:00Z",
+      "importance": 3,
+      "confidence_score": 80,
+      "confidence_explanation": {
+        "source_level": "财联社VIP付费内容",
+        "cross_validation": "Telegram频道转载",
+        "evidence_support": "有具体股票名单"
+      },
+      "sources": [
+        {"name": "财联社VIP", "url": "https://t.me/s/clsvip"}
+      ],
+      "deep_dive": {
+        "underlying_logic": "半导体设备板块异动可能与国产替代加速、AI芯片需求增长等因素相关。",
+        "cross_boundary_links": "需结合当日大盘走势和板块资金流向综合判断。",
+        "exploration_directions": [
+          "关注相关个股后续走势",
+          "分析半导体行业基本面变化"
         ]
       }
     }
