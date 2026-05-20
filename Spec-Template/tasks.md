@@ -3,8 +3,8 @@
 - [ ] **任务 2：加载配置源**
   - 解析根目录下的 `sources.csv`，校验每一行的数据有效性。
 - [ ] **任务 3：强约束抓取与状态监测 (Harvester & Monitor)**
-  - 遍历所有加载的数据源，仅通过 `agent-browser` 抓取数据，保存至 `/public/data/raw/[YYYY-MM-DD]/` [2]。
-  - 实时捕获抓取异常，若失败则记录该源的 `error_type` 和 `error_message` [2]。
+  - 遍历所有加载的数据源，仅通过 skill: `agent-browser` 抓取数据，保存至 `/public/data/raw/[YYYY-MM-DD]/`。
+  - 实时捕获抓取异常，若失败则记录该源的 `error_type` 和 `error_message` 。
 - [ ] **任务 4：生成本地追加日志 (error.log)**
   - 将本次运行失败的源，以 Markdown 表格的形式追加写入根目录的 `/error.log` 末尾。
 - [ ] **任务 5：数据清洗与置信度评估 (Analyst)**

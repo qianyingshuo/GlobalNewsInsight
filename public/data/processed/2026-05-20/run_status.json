@@ -1,13 +1,13 @@
 {
   "run_date": "2026-05-20",
-  "start_time_utc": "2026-05-20T03:10:30.045Z",
-  "end_time_utc": "2026-05-20T03:10:30.045Z",
+  "start_time_utc": "2026-05-20T03:38:22.338Z",
+  "end_time_utc": "2026-05-20T03:38:22.341Z",
   "execution_duration_seconds": 0,
   "stats": {
     "total_configured_sources": 54,
-    "successful_scrapes": 2,
+    "successful_scrapes": 5,
     "failed_scrapes": 2,
-    "success_rate_percent": 50
+    "success_rate_percent": 71.43
   },
   "failures": [
     {
