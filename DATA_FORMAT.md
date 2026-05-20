@@ -393,7 +393,378 @@ A: `source` 是纯文本显示字段；`sources` 是结构化数组，用于生�
 
 ---
 
-## 7. TypeScript 类型定义参考
+## 3. run_status.json — 运行状态日志文件
+
+### 作用
+记录每日爬虫运行的详细状态，包括成功率、失败原因、执行时间等。供前端展示"数据源健康度"看板，也便于排查问题。
+
+### 文件位置
+`public/data/processed/{YYYY-MM-DD}/run_status.json`
+
+### 格式
+
+```json
+{
+  "run_date": "2026-05-20",
+  "start_time_utc": "2026-05-20T03:00:00Z",
+  "end_time_utc": "2026-05-20T03:12:45Z",
+  "execution_duration_seconds": 765,
+  "stats": {
+    "total_configured_sources": 54,
+    "successful_scrapes": 49,
+    "failed_scrapes": 5,
+    "success_rate_percent": 90.74
+  },
+  "failures": [
+    {
+      "source_id": "elonmusk",
+      "name": "Elon Musk",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/elonmusk",
+      "error_type": "HTTP_STATUS_504",
+      "error_message": "Gateway Timeout from Nitter instance",
+      "retries_attempted": 3
+    }
+  ]
+}
+```
+
+### 字段详解
+
+#### 根级别字段
+
+| 字段 | 类型 | 必填 | 说明 |
+|------|------|------|------|
+| `run_date` | string | ✅ | 运行日期，格式 `YYYY-MM-DD` |
+| `start_time_utc` | string | ✅ | 运行开始时间，ISO 8601 格式 |
+| `end_time_utc` | string | ✅ | 运行结束时间，ISO 8601 格式 |
+| `execution_duration_seconds` | number | ✅ | 执行耗时（秒） |
+| `stats` | StatsObject | ✅ | 统计信息对象 |
+| `failures` | FailureItem[] | ✅ | 失败记录数组（无失败时为空数组） |
+
+#### stats 对象
+
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| `total_configured_sources` | number | 配置的数据源总数 |
+| `successful_scrapes` | number | 成功爬取的数据源数量 |
+| `failed_scrapes` | number | 失败的数据源数量 |
+| `success_rate_percent` | number | 成功率百分比（保留两位小数） |
+
+#### FailureItem 对象
+
+| 字段 | 类型 | 必填 | 说明 |
+|------|------|------|------|
+| `source_id` | string | ✅ | 数据源唯一标识（与 sources.csv 中的 id 对应） |
+| `name` | string | ✅ | 数据源显示名称 |
+| `category` | string | ✅ | 数据源分类（如 Twitter/X、Telegram 等） |
+| `url_attempted` | string | ✅ | 尝试访问的 URL |
+| `error_type` | string | ✅ | 错误类型枚举值，见下方【错误类型】 |
+| `error_message` | string | ✅ | 详细的错误描述 |
+| `retries_attempted` | number | ✅ | 重试次数 |
+
+#### 支持的 error_type 枚举值
+
+| 错误类型 | 说明 |
+|----------|------|
+| `HTTP_STATUS_403` | 访问被拒绝（可能是 IP 被封） |
+| `HTTP_STATUS_404` | 页面不存在（源可能已移除） |
+| `HTTP_STATUS_429` | 请求过于频繁（触发限流） |
+| `HTTP_STATUS_500` | 服务器内部错误 |
+| `HTTP_STATUS_502` | 网关错误 |
+| `HTTP_STATUS_503` | 服务不可用 |
+| `HTTP_STATUS_504` | 网关超时（Nitter 等镜像站常见） |
+| `HTTP_NETWORK_ERROR` | 网络连接错误 |
+| `HTTP_TIMEOUT` | 请求超时 |
+| `SELECTOR_NOT_FOUND` | 未找到预期的 DOM 元素（对方改版） |
+| `JSON_PARSE_ERROR` | JSON 解析失败 |
+| `HTML_PARSE_ERROR` | HTML 解析失败 |
+| `XML_PARSE_ERROR` | XML 解析失败 |
+| `SOURCE_DEPRECATED` | 数据源已废弃 |
+| `SOURCE_BLOCKED` | 数据源被屏蔽 |
+| `SOURCE_RATE_LIMITED` | 数据源限流 |
+| `CONFIG_ERROR` | 配置错误 |
+| `FILE_SYSTEM_ERROR` | 文件系统错误 |
+| `UNKNOWN_ERROR` | 未知错误 |
+
+### 前端使用建议
+
+React 网站可以通过以下方式展示数据源健康度：
+
+```typescript
+// 获取运行状态
+const response = await fetch(`/data/processed/2026-05-20/run_status.json`);
+const runStatus = await response.json();
+
+// 渲染健康度组件
+const healthIndicator = runStatus.stats.success_rate_percent >= 90 ? '🟢' :
+                        runStatus.stats.success_rate_percent >= 70 ? '🟡' : '🔴';
+
+// 显示格式：🟢 49/54 正常 (90.74%)
+```
+
+---
+
+## 4. error.log — 人类可读的错误日志
+
+### 作用
+追加式的 Markdown 格式日志文件，便于开发/投研人员快速查看和 Git 追踪历史变更。
+
+### 文件位置
+项目根目录 `error.log`
+
+### 格式示例
+
+```markdown
+## [2026-05-20 03:00:00 UTC] 运行失败源汇总 (共 5 个失败)
+
+| 信息源 ID | 名称 | 分类 | 尝试地址 | 错误类型 | 失败原因 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `elonmusk` | Elon Musk | Twitter/X | `https://nitter.net/elonmusk` | `HTTP_STATUS_504` | Gateway Timeout from Nitter instance |
+| `clsvip` | 财联社 VIP | Telegram | `https://t.me/s/clsvip` | `SELECTOR_NOT_FOUND` | 未定位到 TG 消息元素模板 |
+
+---
+```
+
+### 特点
+- **追加写入**：每次运行失败时追加到文件末尾，保留完整历史
+- **Markdown 表格**：便于在 GitHub/GitLab 中直接渲染查看
+- **快速定位**：通过 error_type 可快速判断是网络问题、源站故障还是解析器失效
+
+---
+
+## 5. 添加新数据的完整流程
+
+### 步骤 1：创建日期文件夹
+
+在 `public/data/processed/` 下创建新文件夹，名称格式为 `YYYY-MM-DD`：
+
+```bash
+mkdir public/data/processed/2026-05-19
+```
+
+### 步骤 2：创建数据文件
+
+在新建文件夹中创建以下文件：
+- `daily_intelligence.json` — 当日情报数据（必填）
+- `run_status.json` — 运行状态日志（建议填写，用于健康度展示）
+
+### 步骤 3：更新 history_index.json
+
+在 `history_index.json` 中追加新日期：
+
+```json
+["2026-05-17", "2026-05-18", "2026-05-19"]
+```
+
+### 步骤 4：验证数据格式
+
+确保 JSON 格式正确，所有必填字段已填写。
+
+### 步骤 5：刷新页面查看
+
+- **开发模式**：Vite 会自动热更新，刷新浏览器即可看到新数据
+- **生产模式**：需要重新运行 `npm run build`
+
+---
+
+## 6. 自动化辅助脚本
+
+### sync-index.js — 自动同步日期索引
+
+在项目根目录创建 `scripts/sync-index.js`：
+
+```javascript
+import { readdirSync, writeFileSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const dataDir = join(__dirname, '../public/data/processed');
+
+// 读取所有文件夹（排除文件）
+const dirs = readdirSync(dataDir, { withFileTypes: true })
+  .filter(d => d.isDirectory())
+  .map(d => d.name)
+  .sort(); // 按字母序排列（即日期升序）
+
+// 写入索引文件
+writeFileSync(
+  join(dataDir, 'history_index.json'),
+  JSON.stringify(dirs, null, 2) + '\n'
+);
+
+console.log(`✅ 已同步 ${dirs.length} 个日期: ${dirs.join(', ')}`);
+```
+
+在 `package.json` 中添加脚本：
+
+```json
+{
+  "scripts": {
+    "sync-index": "node scripts/sync-index.js",
+    "build": "node scripts/sync-index.js && vite build"
+  }
+}
+```
+
+使用方式：
+
+```bash
+# 手动同步索引
+npm run sync-index
+
+# 构建时自动同步
+npm run build
+```
+
+### logger.js — 运行状态日志生成
+
+在项目根目录创建 `scripts/logger.js`：
+
+```javascript
+import { RunStatusLogger, ErrorType } from './scripts/logger.js';
+
+const logger = new RunStatusLogger();
+logger.startRun(54);  // 传入配置的数据源总数
+
+// 记录成功
+logger.recordSuccess({ source_id: 'openai_x', name: 'OpenAI', category: 'Twitter/X' });
+
+// 记录失败
+logger.recordFailure({
+  source_id: 'elonmusk',
+  name: 'Elon Musk',
+  category: 'Twitter/X',
+  url_attempted: 'https://nitter.net/elonmusk',
+  error_type: ErrorType.HTTP_STATUS_504,
+  error_message: 'Gateway Timeout from Nitter instance',
+  retries_attempted: 3
+});
+
+// 结束运行并生成日志文件
+await logger.finishRun();
+```
+
+---
+
+## 7. 完整示例
+
+### 示例：添加 2026-05-19 的数据
+
+**1. 创建文件夹：**
+
+```bash
+mkdir -p public/data/processed/2026-05-19
+```
+
+**2. 创建 daily_intelligence.json：**
+
+```json
+{
+  "date": "2026-05-19",
+  "generated_at": "2026-05-19T10:00:00Z",
+  "executive_briefing": "今日AI领域重点关注...",
+  "charts": [
+    {"id": "ipo_trend", "title": "IPO热度趋势", "path": "/assets/ipo_trend.png"}
+  ],
+  "intelligence_items": [
+    {
+      "id": "1",
+      "title": "示例情报标题",
+      "summary": "这是情报摘要...",
+      "category": "AI & Tech",
+      "source": "示例来源",
+      "published_at": "2026-05-19T08:00:00Z",
+      "importance": 5,
+      "confidence_score": 90,
+      "confidence_explanation": {
+        "source_level": "一手官方数据",
+        "cross_validation": "多个来源确认",
+        "evidence_support": "有具体数据支撑"
+      },
+      "sources": [
+        {"name": "来源A", "url": "https://example.com/a"},
+        {"name": "来源B", "url": "https://example.com/b"}
+      ],
+      "deep_dive": {
+        "underlying_logic": "底层逻辑分析...",
+        "cross_boundary_links": "跨界关联分析...",
+        "exploration_directions": ["行动建议1", "行动建议2"]
+      }
+    }
+  ]
+}
+```
+
+**3. 创建 run_status.json（可选但推荐）：**
+
+```json
+{
+  "run_date": "2026-05-19",
+  "start_time_utc": "2026-05-19T02:00:00Z",
+  "end_time_utc": "2026-05-19T02:15:30Z",
+  "execution_duration_seconds": 930,
+  "stats": {
+    "total_configured_sources": 54,
+    "successful_scrapes": 52,
+    "failed_scrapes": 2,
+    "success_rate_percent": 96.3
+  },
+  "failures": []
+}
+```
+
+**4. 更新 history_index.json：**
+
+```json
+["2026-05-18", "2026-05-19"]
+```
+
+**5. 同步并构建（如果使用脚本）：**
+
+```bash
+npm run sync-index
+npm run build
+```
+
+---
+
+## 8. 常见问题
+
+### Q: 日期文件夹名和 JSON 中的 date 字段不一致会怎样？
+A: 前端以文件夹名为准加载数据，JSON 中的 `date` 字段仅用于显示。建议保持一致。
+
+### Q: 可以删除旧日期数据吗？
+A: 可以。删除文件夹后，务必同步更新 `history_index.json`。
+
+### Q: sources 数组和 source 字段有什么区别？
+A: `source` 是纯文本显示字段；`sources` 是结构化数组，用于生成可点击的链接标签。建议同时提供两者。
+
+### Q: run_status.json 是必填的吗？
+A: 不是必填的，但强烈建议提供。没有此文件时，前端无法展示数据源健康度看板。
+
+### Q: error.log 需要手动维护吗？
+A: 不需要。使用 `logger.js` 脚本会自动追加写入。
+
+### Q: importance 和 confidence_score 的评分标准？
+
+**importance（重要性）：**
+- ⭐⭐⭐⭐⭐ (5): 行业重大事件，影响深远
+- ⭐⭐⭐⭐ (4): 重要动态，值得关注
+- ⭐⭐⭐ (3): 一般性新闻
+- ⭐⭐ (2): 次要信息
+- ⭐ (1): 参考信息
+
+**confidence_score（置信度）：**
+- 90-100%: 一手官方数据，多源交叉验证
+- 70-89%: 主流媒体报道，有数据支撑
+- 50-69%: 单一来源，待进一步验证
+- <50%: 传闻或未经证实消息
+
+---
+
+## 9. TypeScript 类型定义参考
 
 ```typescript
 // src/types/index.ts
@@ -441,5 +812,30 @@ export interface DailyIntelligence {
   executive_briefing: string;
   charts: ChartData[];
   intelligence_items: IntelligenceItem[];
+}
+
+// 运行状态相关类型
+export interface RunStatus {
+  run_date: string;
+  start_time_utc: string;
+  end_time_utc: string;
+  execution_duration_seconds: number;
+  stats: {
+    total_configured_sources: number;
+    successful_scrapes: number;
+    failed_scrapes: number;
+    success_rate_percent: number;
+  };
+  failures: FailureItem[];
+}
+
+export interface FailureItem {
+  source_id: string;
+  name: string;
+  category: string;
+  url_attempted: string;
+  error_type: string;
+  error_message: string;
+  retries_attempted: number;
 }
 ```

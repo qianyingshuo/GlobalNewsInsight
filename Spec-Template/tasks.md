@@ -1,0 +1,20 @@
+- [ ] **任务 1：环境与分支同步**
+  - 从远程关联的 GitHub 仓库拉取 `main` 分支最新代码，确保工作区干净。
+- [ ] **任务 2：加载配置源**
+  - 解析根目录下的 `sources.csv`，校验每一行的数据有效性。
+- [ ] **任务 3：强约束抓取与状态监测 (Harvester & Monitor)**
+  - 遍历所有加载的数据源，仅通过 `agent-browser` 抓取数据，保存至 `/public/data/raw/[YYYY-MM-DD]/` [2]。
+  - 实时捕获抓取异常，若失败则记录该源的 `error_type` 和 `error_message` [2]。
+- [ ] **任务 4：生成本地追加日志 (error.log)**
+  - 将本次运行失败的源，以 Markdown 表格的形式追加写入根目录的 `/error.log` 末尾。
+- [ ] **任务 5：数据清洗与置信度评估 (Analyst)**
+  - 执行去重、UTC 过滤，计算 `confidence_score`。
+  - 针对 >= 4 星情报，调用 LLM 生成 800 字以上的深度研究（含表格/图表）。
+  - 更新 `/public/data/processed/[YYYY-MM-DD]/daily_intelligence.json` 与历史索引文件 `history_index.json`。
+- [ ] **任务 6：生成运行状态汇总 (run_status.json)**
+  - 根据 `DATA_FORMAT.md` 定义的格式，计算成功率、耗时等指标，生成 `/public/data/processed/[YYYY-MM-DD]/run_status.json`。
+- [ ] **任务 7：生成战略简报与可视化 (Strategist)**
+  - 撰写 300-500 字的高管简报，并生成至少 2 张趋势图表至 `/public/assets/`。
+- [ ] **任务 8：构建校验与推送 (Deployer)**
+  - 运行前端项目的生产环境构建命令，确保无任何编译错误。
+  - 合并本地更改至 `main` 分支并推送至远程 GitHub 仓库，严禁推送至其他分支。

@@ -1,0 +1,55 @@
+id,name,category,url,strategy_type
+elonmusk,Elon Musk,Twitter/X,https://nitter.net/elonmusk,nitter_mirror
+xai,xAI,Twitter/X,https://nitter.net/xAI,nitter_mirror
+openai_x,OpenAI,Twitter/X,https://nitter.net/OpenAI,nitter_mirror
+anthropic_x,Anthropic,Twitter/X,https://nitter.net/AnthropicAI,nitter_mirror
+deepmind_x,Google DeepMind,Twitter/X,https://nitter.net/GoogleDeepMind,nitter_mirror
+mistral_x,Mistral AI,Twitter/X,https://nitter.net/MistralAI,nitter_mirror
+perplexity_x,Perplexity AI,Twitter/X,https://nitter.net/perplexity_ai,nitter_mirror
+huggingface_x,Hugging Face,Twitter/X,https://nitter.net/huggingface,nitter_mirror
+meta_x,Meta AI,Twitter/X,https://nitter.net/MetaAI,nitter_mirror
+deltaone_x,Deltaone,Twitter/X,https://nitter.net/DeItaone,nitter_mirror
+firstsquawk_x,First Squawk,Twitter/X,https://nitter.net/FirstSquawk,nitter_mirror
+wsjmarkets_x,WSJ Markets,Twitter/X,https://nitter.net/WSJmarkets,nitter_mirror
+charliebilello_x,Charlie Bilello,Twitter/X,https://nitter.net/charliebilello,nitter_mirror
+lizannsonders_x,Liz Ann Sonders,Twitter/X,https://nitter.net/LizAnnSonders,nitter_mirror
+elerianm_x,Mohamed A. El-Erian,Twitter/X,https://nitter.net/elerianm,nitter_mirror
+renaissancecap_x,Renaissance Capital,Twitter/X,https://nitter.net/RenaissanceCap,nitter_mirror
+benzinga_x,Benzinga,Twitter/X,https://nitter.net/Benzinga,nitter_mirror
+ianbremmer_x,Ian Bremmer,Twitter/X,https://nitter.net/IanBremmer,nitter_mirror
+spectatorindex_x,Spectator Index,Twitter/X,https://nitter.net/spectatorindex,nitter_mirror
+gzeromedia_x,GZERO Media,Twitter/X,https://nitter.net/GZEROMedia,nitter_mirror
+xhqcankao,星火参考,Telegram,https://t.me/s/xhqcankao,tg_web_preview
+clsvip,财联社 VIP,Telegram,https://t.me/s/clsvip,tg_web_preview
+zaihuapd,在华频道,Telegram,https://t.me/s/zaihuapd,tg_web_preview
+dnspodt,DNSPOD,Telegram,https://t.me/s/DNSPODT,tg_web_preview
+financenewsdaily,Finance News Daily,Telegram,https://t.me/s/FinanceNewsDaily,tg_web_preview
+dtlight,灯塔,Telegram,https://t.me/s/dtlight,tg_web_preview
+newlearnerchannel,NewlearnerChannel,Telegram,https://t.me/s/NewlearnerChannel,tg_web_preview
+r_localllama,r/LocalLLaMA,Reddit,https://www.reddit.com/r/LocalLLaMA/new.json,reddit_json
+r_vibecoding,r/vibecoding,Reddit,https://www.reddit.com/r/vibecoding/new.json,reddit_json
+r_claudeai,r/ClaudeAI,Reddit,https://www.reddit.com/r/ClaudeAI/new.json,reddit_json
+gh_awesome_mcp,Awesome MCP Servers,GitHub,https://github.com/punkpeye/awesome-mcp-servers,github_html
+gh_opencode,OpenCode,GitHub,https://github.com/anomalyco/opencode,github_html
+gh_trending,GitHub Trending,GitHub,https://github.com/trending,github_html
+so_ollama,StackOverflow ollama,StackOverflow,https://stackoverflow.com/questions/tagged/ollama?sort=Newest,so_html
+so_vllm,StackOverflow vllm,StackOverflow,https://stackoverflow.com/questions/tagged/vllm?sort=Newest,so_html
+so_langchain,StackOverflow langchain,StackOverflow,https://stackoverflow.com/questions/tagged/langchain?sort=Newest,so_html
+hackernews,Hacker News,Blog/News,https://news.ycombinator.com/,hn_html
+anthropic_research,Anthropic Research,Blog/News,https://www.anthropic.com/research,blog_html
+anthropic_news,Anthropic Newsroom,Blog/News,https://www.anthropic.com/news,blog_html
+anthropic_events,Anthropic Events,Blog/News,https://www.anthropic.com/events,blog_html
+google_ai,Google AI Blog,Blog/News,https://blog.google/technology/ai/,blog_html
+google_deepmind,Google DeepMind Blog,Blog/News,https://deepmind.google/blog/,blog_html
+google_research,Google Research Blog,Blog/News,https://research.google/blog/,blog_html
+openai_news,OpenAI News,Blog/News,https://openai.com/news/,blog_html
+openai_research,OpenAI Research,Blog/News,https://openai.com/research/,blog_html
+openai_announcements,OpenAI Announcements,Blog/News,https://openai.com/news/company-announcements/,blog_html
+hf_papers,Hugging Face Papers,Academic,https://huggingface.co/papers,hf_html
+arxiv_cs_cl,arXiv cs.CL,Academic,http://export.arxiv.org/api/query?search_query=cat:cs.CL&sortBy=submittedDate&sortOrder=descending,arxiv_api
+arxiv_cs_lg,arXiv cs.LG,Academic,http://export.arxiv.org/api/query?search_query=cat:cs.LG&sortBy=submittedDate&sortOrder=descending,arxiv_api
+arxiv_cs_ro,arXiv cs.RO,Academic,http://export.arxiv.org/api/query?search_query=cat:cs.RO&sortBy=submittedDate&sortOrder=descending,arxiv_api
+arxiv_q_bio_nc,arXiv q-bio.NC,Academic,http://export.arxiv.org/api/query?search_query=cat:q-bio.NC&sortBy=submittedDate&sortOrder=descending,arxiv_api
+arxiv_econ_th,arXiv econ.TH,Academic,http://export.arxiv.org/api/query?search_query=cat:econ.TH&sortBy=submittedDate&sortOrder=descending,arxiv_api
+arxiv_q_fin_st,arXiv q-fin.ST,Academic,http://export.arxiv.org/api/query?search_query=cat:q-fin.ST&sortBy=submittedDate&sortOrder=descending,arxiv_api
+arxiv_q_fin_cp,arXiv q-fin.CP,Academic,http://export.arxiv.org/api/query?search_query=cat:q-fin.CP&sortBy=submittedDate&sortOrder=descending,arxiv_api
