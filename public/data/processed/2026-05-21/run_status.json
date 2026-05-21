@@ -1,0 +1,248 @@
+{
+  "run_date": "2026-05-21",
+  "start_time_utc": "2026-05-21T01:00:00Z",
+  "end_time_utc": "2026-05-21T01:30:00Z",
+  "execution_duration_seconds": 1800,
+  "stats": {
+    "total_configured_sources": 54,
+    "successful_scrapes": 28,
+    "failed_scrapes": 26,
+    "success_rate_percent": 51.85
+  },
+  "failures": [
+    {
+      "source_id": "elonmusk",
+      "name": "Elon Musk",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/elonmusk",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 1
+    },
+    {
+      "source_id": "xai",
+      "name": "xAI",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/xAI",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 1
+    },
+    {
+      "source_id": "openai_x",
+      "name": "OpenAI",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/OpenAI",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "anthropic_x",
+      "name": "Anthropic",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/AnthropicAI",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "deepmind_x",
+      "name": "Google DeepMind",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/GoogleDeepMind",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "mistral_x",
+      "name": "Mistral AI",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/MistralAI",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "perplexity_x",
+      "name": "Perplexity AI",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/perplexity_ai",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "huggingface_x",
+      "name": "Hugging Face",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/huggingface",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "meta_x",
+      "name": "Meta AI",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/MetaAI",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "deltaone_x",
+      "name": "Deltaone",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/DeItaone",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "firstsquawk_x",
+      "name": "First Squawk",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/FirstSquawk",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "wsjmarkets_x",
+      "name": "WSJ Markets",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/WSJmarkets",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "charliebilello_x",
+      "name": "Charlie Bilello",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/charliebilello",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "lizannsonders_x",
+      "name": "Liz Ann Sonders",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/LizAnnSonders",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "elerianm_x",
+      "name": "Mohamed A. El-Erian",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/elerianm",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "renaissancecap_x",
+      "name": "Renaissance Capital",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/RenaissanceCap",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "benzinga_x",
+      "name": "Benzinga",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/Benzinga",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "ianbremmer_x",
+      "name": "Ian Bremmer",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/IanBremmer",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "spectatorindex_x",
+      "name": "Spectator Index",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/spectatorindex",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "gzeromedia_x",
+      "name": "GZERO Media",
+      "category": "Twitter/X",
+      "url_attempted": "https://nitter.net/GZEROMedia",
+      "error_type": "SOURCE_DEPRECATED",
+      "error_message": "Nitter实例返回空页面，服务已不可用",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "r_localllama",
+      "name": "r/LocalLLaMA",
+      "category": "Reddit",
+      "url_attempted": "https://www.reddit.com/r/LocalLLaMA/new.json",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Reddit网络安全拦截，返回You've been blocked by network security",
+      "retries_attempted": 1
+    },
+    {
+      "source_id": "r_vibecoding",
+      "name": "r/vibecoding",
+      "category": "Reddit",
+      "url_attempted": "https://www.reddit.com/r/vibecoding/new.json",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Reddit网络安全拦截，与r/LocalLLaMA相同拦截机制",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "r_claudeai",
+      "name": "r/ClaudeAI",
+      "category": "Reddit",
+      "url_attempted": "https://www.reddit.com/r/ClaudeAI/new.json",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Reddit网络安全拦截，与r/LocalLLaMA相同拦截机制",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "so_ollama",
+      "name": "StackOverflow ollama",
+      "category": "StackOverflow",
+      "url_attempted": "https://stackoverflow.com/questions/tagged/ollama?sort=Newest",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Cloudflare安全验证拦截，无法通过人机验证",
+      "retries_attempted": 1
+    },
+    {
+      "source_id": "so_vllm",
+      "name": "StackOverflow vllm",
+      "category": "StackOverflow",
+      "url_attempted": "https://stackoverflow.com/questions/tagged/vllm?sort=Newest",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Cloudflare安全验证拦截，与ollama标签相同拦截",
+      "retries_attempted": 0
+    },
+    {
+      "source_id": "so_langchain",
+      "name": "StackOverflow langchain",
+      "category": "StackOverflow",
+      "url_attempted": "https://stackoverflow.com/questions/tagged/langchain?sort=Newest",
+      "error_type": "SOURCE_BLOCKED",
+      "error_message": "Cloudflare安全验证拦截，与ollama标签相同拦截",
+      "retries_attempted": 0
+    }
+  ]
+}

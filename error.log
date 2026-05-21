@@ -1,0 +1,32 @@
+## [2026-05-21 01:30:00 UTC] 运行失败源汇总 (共 26 个失败)
+
+| 信息源 ID | 名称 | 分类 | 尝试地址 | 错误类型 | 失败原因 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `elonmusk` | Elon Musk | Twitter/X | `https://nitter.net/elonmusk` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `xai` | xAI | Twitter/X | `https://nitter.net/xAI` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `openai_x` | OpenAI | Twitter/X | `https://nitter.net/OpenAI` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `anthropic_x` | Anthropic | Twitter/X | `https://nitter.net/AnthropicAI` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `deepmind_x` | Google DeepMind | Twitter/X | `https://nitter.net/GoogleDeepMind` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `mistral_x` | Mistral AI | Twitter/X | `https://nitter.net/MistralAI` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `perplexity_x` | Perplexity AI | Twitter/X | `https://nitter.net/perplexity_ai` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `huggingface_x` | Hugging Face | Twitter/X | `https://nitter.net/huggingface` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `meta_x` | Meta AI | Twitter/X | `https://nitter.net/MetaAI` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `deltaone_x` | Deltaone | Twitter/X | `https://nitter.net/DeItaone` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `firstsquawk_x` | First Squawk | Twitter/X | `https://nitter.net/FirstSquawk` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `wsjmarkets_x` | WSJ Markets | Twitter/X | `https://nitter.net/WSJmarkets` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `charliebilello_x` | Charlie Bilello | Twitter/X | `https://nitter.net/charliebilello` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `lizannsonders_x` | Liz Ann Sonders | Twitter/X | `https://nitter.net/LizAnnSonders` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `elerianm_x` | Mohamed A. El-Erian | Twitter/X | `https://nitter.net/elerianm` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `renaissancecap_x` | Renaissance Capital | Twitter/X | `https://nitter.net/RenaissanceCap` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `benzinga_x` | Benzinga | Twitter/X | `https://nitter.net/Benzinga` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `ianbremmer_x` | Ian Bremmer | Twitter/X | `https://nitter.net/IanBremmer` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `spectatorindex_x` | Spectator Index | Twitter/X | `https://nitter.net/spectatorindex` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `gzeromedia_x` | GZERO Media | Twitter/X | `https://nitter.net/GZEROMedia` | `SOURCE_DEPRECATED` | Nitter实例返回空页面，服务已不可用 |
+| `r_localllama` | r/LocalLLaMA | Reddit | `https://www.reddit.com/r/LocalLLaMA/new.json` | `SOURCE_BLOCKED` | Reddit网络安全拦截，返回"You've been blocked by network security" |
+| `r_vibecoding` | r/vibecoding | Reddit | `https://www.reddit.com/r/vibecoding/new.json` | `SOURCE_BLOCKED` | Reddit网络安全拦截，与r/LocalLLaMA相同拦截机制 |
+| `r_claudeai` | r/ClaudeAI | Reddit | `https://www.reddit.com/r/ClaudeAI/new.json` | `SOURCE_BLOCKED` | Reddit网络安全拦截，与r/LocalLLaMA相同拦截机制 |
+| `so_ollama` | StackOverflow ollama | StackOverflow | `https://stackoverflow.com/questions/tagged/ollama?sort=Newest` | `SOURCE_BLOCKED` | Cloudflare安全验证拦截，无法通过人机验证 |
+| `so_vllm` | StackOverflow vllm | StackOverflow | `https://stackoverflow.com/questions/tagged/vllm?sort=Newest` | `SOURCE_BLOCKED` | Cloudflare安全验证拦截，与ollama标签相同拦截 |
+| `so_langchain` | StackOverflow langchain | StackOverflow | `https://stackoverflow.com/questions/tagged/langchain?sort=Newest` | `SOURCE_BLOCKED` | Cloudflare安全验证拦截，与ollama标签相同拦截 |
+
+---

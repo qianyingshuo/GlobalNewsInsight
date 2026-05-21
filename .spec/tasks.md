@@ -1,20 +1,20 @@
-- [ ] **任务 1：拉取最新代码**
-  - 远程管理：从 GitHub 仓库拉取 `main` 分支最新代码，确保本地已删除冗余
-- [ ] **任务 2：加载数据源**
-  - 读取根目录下的 `sources.csv`，验证每一行的数据有效性
-- [ ] **任务 3：强制抓取状态监控 (Harvester & Monitor)**
-  - 遍历所有配置的数据源，通过 skill: `agent-browser` 抓取数据，存储至 `/public/data/raw/[YYYY-MM-DD]/`
-  - 实时监控抓取异常，记录失败的数据源包括 `error_type` 和 `error_message`
-- [ ] **任务 4：生成错误追查日志 (error.log)**
-  - 将所有失败的数据源以 Markdown 表格追加形式写入项目的 `/error.log` 末尾
-- [ ] **任务 5：数据清洗与分析 (Analyst)**
-  - 执行去重、UTC 过滤、置信度 `confidence_score` 计算
-  - 对 >= 4 星情报调用 LLM 生成 800 字以上的深度研究报告/图表分析
-  - 生成 `/public/data/processed/[YYYY-MM-DD]/daily_intelligence.json` 和历史索引文件 `history_index.json`
-- [ ] **任务 6：生成运行状态日志 (run_status.json)**
-  - 按照 `DATA_FORMAT.md` 定义的格式，生成成功率、耗时指标，输出至 `/public/data/processed/[YYYY-MM-DD]/run_status.json`
-- [ ] **任务 7：撰写战略简报与可视化 (Strategist)**
-  - 撰写 300-500 字的高管简报，并生成至少 2 张趋势图表，输出至 `/public/assets/`
-- [ ] **任务 8：本地校验与部署 (Deployer)**
-  - 运行前端项目编译验证，确保无任何编译错误
-  - 合并并推送至 `main` 分支及远程 GitHub 仓库，禁止推送到 main 以外的分支
+- [x] **步骤 1：远程同步**
+  - 从远程 GitHub 仓库获取 `main` 分支最新代码，确保本地无遗漏
+- [x] **步骤 2：加载数据源**
+  - 读取根目录下的 `sources.csv`，校验每一行的数据有效性。
+- [x] **步骤 3：强约束抓取与状态监控 (Harvester & Monitor)**
+  - 对所有已加载的数据源，通过 skill: `agent-browser` 抓取数据，保存至 `/public/data/raw/[YYYY-MM-DD]/`。
+  - 实时记录抓取异常与失败记录，包括 `error_type` 和 `error_message`。
+- [x] **步骤 4：生成可追溯日志 (error.log)**
+  - 对所有抓取失败的源，以 Markdown 表格格式追加写入根目录的 `/error.log` 末尾。
+- [x] **步骤 5：数据清洗与深度研判 (Analyst)**
+  - 执行去重、UTC 过滤、计算 `confidence_score`。
+  - 对 >= 4 星情报，生成 LLM 驱动 800 字以上的深度研究（底层逻辑/跨界关联）。
+  - 生成 `/public/data/processed/[YYYY-MM-DD]/daily_intelligence.json` 及历史索引文件 `history_index.json`。
+- [x] **步骤 6：生成运行状态报告 (run_status.json)**
+  - 按照 `DATA_FORMAT.md` 规定的格式，统计成功率、耗时指标，输出 `/public/data/processed/[YYYY-MM-DD]/run_status.json`。
+- [x] **步骤 7：战略简报与图表 (Strategist)**
+  - 撰写 300-500 字的高管简报，生成至少 2 张趋势图表至 `/public/assets/`。
+- [ ] **步骤 8：构建校验与部署 (Deployer)**
+  - 运行前端项目的构建编译命令，确保无任何编译错误。
+  - 合并并推送至 `main` 分支，推送到远程 GitHub 仓库，严禁推送到其他分支。
